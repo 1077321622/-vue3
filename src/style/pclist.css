@@ -1,0 +1,74 @@
+ul li{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+  .mian{
+    display: flex;
+  }
+  .lbox{
+    flex: 1;
+  }
+  .lbox ul li{
+   display: flex;
+   border-bottom: 1px solid #f4f4f4;
+   margin: 32px 5px;
+   line-height: 32px;
+   cursor: pointer;
+   height: 56px;
+   overflow: hidden;
+  }
+
+  .lbox ul li:hover{
+    border-bottom: 2px solid #dfd8d8;
+  }
+
+.lbox ul li .index{
+    border: 1px solid #6666660f;
+    margin: 5px;
+    padding: 5px 14px;
+    border-radius: 3px;
+}
+
+.lbox ul li .name{
+    line-height: 55px;
+}
+
+.lbox ul li .time{
+    line-height: 55px;
+    margin-left: 10px;
+    color: red;
+}
+.lbox ul li .size{
+    line-height: 55px;
+    margin-left: 10px;
+    color: rgb(119, 141, 214);
+}
+.lbox ul li .Service{
+    margin-left: 10px;
+    line-height: 55px;
+}
+  .rbox{
+    width:400px;
+    border: 1px solid #f6f6f6;
+    margin-left: 20px;
+  }
+  .active {
+   position: relative;
+ }
+ .active:after {
+   content: "";
+   position: absolute;
+   top: 0px;
+   left:0px;
+   width: 43px;
+   height: 45px;
+   background-image: url("../assets/likeon.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: #409EFF;
+   text-align: center;
+   line-height: 56px;
+   font-weight: bold;
+   animation:scale 1s linear infinite; 
+ }
