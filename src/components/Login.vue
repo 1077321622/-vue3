@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2022-03-04 17:33:01
- * @LastEditTime: 2023-03-15 10:59:32
+ * @LastEditTime: 2023-03-15 11:23:25
  * @LastEditors: “1077321622@qq.com” lzr448470520
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \viteapp\src\components\Login.vue
@@ -61,7 +61,7 @@ const gologin = () => {
     //手机号登录
     // phone: username.value,
     // password: password.value, 
-    //邮箱登录2222222222222222222222222
+    //邮箱登录
     email: username.value,
     password: password.value, 
 
@@ -69,7 +69,7 @@ const gologin = () => {
 //
   Login1(parms)
     .then((res) => {
-    
+      
       if (res.code == 200) {
         Cookies.set("cookies", res.cookie);
         store.commit("login/userInfo", res);
@@ -82,6 +82,7 @@ const gologin = () => {
       } else {
         ElMessage.error(res.message);
       }
+      console.log(res)
     })
     .catch((error) => {
      ElMessage.error(error.message);
