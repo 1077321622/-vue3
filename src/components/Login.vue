@@ -207,6 +207,8 @@ const gologin = () => {
       .btn:hover::before {
         transform: translateX(0);
       }
+      .a{
+      }
     }
   }
 }
