@@ -61,7 +61,7 @@ const gologin = () => {
     //手机号登录
     // phone: username.value,
     // password: password.value, 
-    //邮箱登录1111111
+    //邮箱登录2222222222222222222222222
     email: username.value,
     password: password.value, 
 
@@ -69,7 +69,7 @@ const gologin = () => {
 //
   Login1(parms)
     .then((res) => {
-      console.log(res);
+    
       if (res.code == 200) {
         Cookies.set("cookies", res.cookie);
         store.commit("login/userInfo", res);
