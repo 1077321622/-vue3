@@ -1,0 +1,28 @@
+{
+  "name": "viteapp",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --mode dev",
+    "build": "vite build --mode pro",
+    "preview": "vite preview"
+
+  },
+  "dependencies": {
+    "@jiaminghi/data-view": "^2.10.0",
+    "axios": "^0.26.0",
+    "element-plus": "^2.0.5",
+    "iconv-lite": "^0.6.3",
+    "js-cookie": "^3.0.1",
+    "vant": "^3.4.6",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.13",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "unplugin-auto-import": "^0.12.1",
+    "vite": "^2.8.0",
+    "vite-plugin-style-import": "^1.4.1"
+  }
+}
